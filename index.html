@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ZIP 文件查看器 - 批量上传到知识库</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- React 18 与 Babel（仅开发用，无需构建） -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js" crossorigin></script>
+
+    <!-- 第三方库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
+    <!-- 组件文件（需要 Babel 处理 JSX） -->
+    <script type="text/babel" src="js/components/Navbar.js"></script>
+    <script type="text/babel" src="js/components/ZipViewer.js"></script>
+    
+    <!-- 主应用入口 -->
+    <script type="text/babel" src="js/app.js"></script>
+  </body>
+</html>
+
+
+
